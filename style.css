@@ -87,6 +87,6 @@ img {
 }
 
 .airbnb-container img {
-    height: 600px; /* Set a fixed height for the images */
+    height: 601px; /* Set a fixed height for the images */
     object-fit: cover; /* Ensure images cover the set height */
 }
