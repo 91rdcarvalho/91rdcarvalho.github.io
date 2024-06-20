@@ -59,3 +59,26 @@ p {
     font-size: 16px;
     line-height: 1.5;
 }
+
+img {
+    max-width: 90%; /* Ensure image does not exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    display: block; /* Ensure proper spacing */
+    margin: 20px; /* Center the image and add vertical margin */
+}
+
+/* Flexbox container for the About section */
+.about-container {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically center */
+}
+
+.about-container img {
+    max-width: 200px; /* Set a fixed width for the image */
+    margin-right: 20px; /* Add some space between image and text */
+}
+
+.about-text {
+    max-width: auto; /* Set a maximum width for the text container */
+}
