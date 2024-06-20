@@ -76,7 +76,7 @@ img {
 }
 
 .about-text {
-    max-width: 800px; /* Set a maximum width for the text container */
+    max-width: 100%; /* Set a maximum width for the text container */
 }
 
 /* Flexbox container for the Airbnb project section */
