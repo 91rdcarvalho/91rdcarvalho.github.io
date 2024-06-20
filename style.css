@@ -42,9 +42,6 @@ h1 {
     padding: 10px;
 }
 
-h3 {
-    font-weight: normal;
-}
 
 /* Styles for sections */
 section {
@@ -81,4 +78,15 @@ img {
 
 .about-text {
     max-width: auto; /* Set a maximum width for the text container */
+}
+
+.airbnb-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.airbnb-container img {
+    height: 600px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensure images cover the set height */
 }
