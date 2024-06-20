@@ -77,6 +77,7 @@ img {
 
 .about-text {
     max-width: 100%; /* Set a maximum width for the text container */
+    align-items: center;
 }
 
 /* Flexbox container for the Airbnb project section */
