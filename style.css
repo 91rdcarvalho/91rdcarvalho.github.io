@@ -49,6 +49,7 @@ section {
     margin: 20px;
     background-color: white;
     border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for better appearance */
 }
 
 
@@ -84,9 +85,31 @@ img {
     display: flex;
     align-items: center;
     gap: 20px;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .airbnb-container img {
-    height: 601px; /* Set a fixed height for the images */
+    height: 600px; /* Set a fixed height for the images */
     object-fit: cover; /* Ensure images cover the set height */
+    width: auto;
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Stack the items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .about-container img {
+        max-width: 100%; /* Allow the image to take full width */
+        margin-bottom: 20px; /* Add some space below the image */
+    }
+
+    .about-text {
+        max-width: 100%; /* Allow the text to take full width */
+    }
 }
