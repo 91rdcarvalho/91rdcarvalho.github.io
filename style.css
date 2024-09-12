@@ -39,6 +39,8 @@ section {
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for better appearance */
+    max-width: 1200px; /* Maximum width for the section */
+    width: 900 px; /* Ensure the section takes up 90% of the viewport width */
 }
 
 /* Custom styles for h1 */
