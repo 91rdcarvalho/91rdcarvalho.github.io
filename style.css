@@ -93,8 +93,8 @@ img {
 }
 
 .airbnb-container img {
-    width: 150px;
-    height: auto;
+    width: auto;
+    height: 450px;
     transition: transform 0.3s ease;
 }
 
