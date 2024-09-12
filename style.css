@@ -113,3 +113,13 @@ img {
         align-items: center; /* Center the images */
     }
 }
+
+a {
+    color: inherit; /* Inherit the color from the surrounding text */
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Optionally add a hover effect */
+a:hover {
+    text-decoration: underline; /* Adds underline on hover for clarity */
+}
