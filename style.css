@@ -95,7 +95,8 @@ img {
 }
 
 .airbnb-container img {
-    max-width: 100%;
+    max-width: 400px; /* Maximum width for the images */
+    width: 100%; /* Ensure the image width is responsive */
     height: auto;
     transition: transform 0.3s ease;
 }
