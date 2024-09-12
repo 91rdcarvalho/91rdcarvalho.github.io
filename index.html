@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ricardo Carvalho</title>
+    <title>Portfolio - Ricardo Carvalho</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.png" type="image/png">
@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <h1>Ricardo Carvalho</h1>
+        <h1><a href="index.html">Portfolio</a></h1>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -21,30 +21,36 @@
             </ul>
         </nav>
     </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="about-container">
-            <img src="Images/Foto_eu.jpg" alt="Ricardo Carvalho">
-            <div class="about-text">
-                <h3>Data Scientist and Digital Marketing Specialist | Co-founder at Agencia Soen</h3>
-                <p>As I near the completion of my first year in a Master's program in Modeling, Data Analysis, and Decision Support Systems at FEP - School of Economics and Management of the University of Porto, I am excited to continue my career as a Data Scientist. My academic journey, combined with my professional experience as a Co-founder and Coordinator of Data Analytics and Digital Marketing at Agencia Soen, has equipped me with a strong foundation in data analysis, statistical modeling, and digital marketing strategies. I have honed my skills in Python, R, Power BI, and Google Looker Studio, allowing me to efficiently analyze and interpret complex data sets to drive informed decision-making. With a passion for transforming data into actionable insights, I am eager to contribute to a dynamic team and leverage my expertise to solve real-world problems and create value through data science.</p>
+    <div class="section-container">
+        <h2 class="section-title">About Me</h2>
+        <section id="about">
+            <div class="about-container">
+                <img src="Images/Foto_eu.jpg" alt="Ricardo Carvalho">
+                <div class="about-text">
+                    <h3>Ricardo Carvalho | Data Scientist</h3>
+                    <p>As I near the completion of my first year in a Master's program in Modeling, Data Analysis, and Decision Support Systems at FEP - School of Economics and Management of the University of Porto, I am excited to continue my career as a Data Scientist. My academic journey, combined with my professional experience as a Co-founder and Coordinator of Data Analytics and Digital Marketing at Agencia Soen, has equipped me with a strong foundation in data analysis, statistical modeling, and digital marketing strategies. I have honed my skills in Python, R, Power BI, and Google Looker Studio, allowing me to efficiently analyze and interpret complex data sets to drive informed decision-making. With a passion for transforming data into actionable insights, I am eager to contribute to a dynamic team and leverage my expertise to solve real-world problems and create value through data science.</p>
+                </div>
             </div>
-        </div>
-    </section>
-    <section id="projects">
-        <h2>My Projects</h2>
-        <h3><a href="airbnb.html">Prices of Airbnb in Europe</a></h3>
-        <div class="airbnb-container">
-            <img src="Images/Prices apartment.png" alt="Average prices of an apartment in an Airbnb in European Capitals">
-            <img src="Images/contry_vs_country.png" alt="Cmoparison of the ratio between countries">
-        </div>
-        <p><a href="airbnb.html">More info</a></p>
-    </section>
-    <section id="contact">
+        </section>
+    </div>
+    
+    <div class="section-container">
+        <h2 class="section-title">My Projects</h2>
+        <section id="projects">
+            <h3><a href="airbnb.html">Prices of Airbnb in Europe</a></h3>
+            <div class="airbnb-container">
+                <img src="Images/Prices apartment.png" alt="Average prices of an apartment in an Airbnb in European Capitals">
+                <img src="Images/contry_vs_country.png" alt="Comparison of the ratio between countries">
+            </div>
+            <p><a href="airbnb.html">More info</a></p>
+        </section>
+    </div>
+    <script src="script.js"></script>
+
+    <footer id="contact">
         <h2>Contact Me</h2>
         <p><i class="fas fa-phone"></i> Phone: 961078856</p>
         <p><i class="fas fa-envelope"></i> E-mail: 91r.dcarvalho@gmail.com</p>
-    </section>
-    <script src="script.js"></script>
+    </footer>
 </body>
 </html>
