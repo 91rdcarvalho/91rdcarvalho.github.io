@@ -92,6 +92,16 @@ img {
     margin: 0 auto; /* Center the container */
 }
 
+.airbnb-container img {
+    width: 150px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.airbnb-container img:hover {
+    transform: scale(1.5);
+}
+
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     .about-container {
