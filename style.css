@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -15,15 +16,15 @@ header {
 
 /* Styles for the navigation menu */
 nav ul {
-    list-style-type: none; /* Remove bullets */
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Use flexbox to display items in a row */
-    justify-content: center; /* Center the items horizontally */
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    margin: 0 15px; /* Add some space between items */
+    margin: 0 15px;
 }
 
 nav ul li a {
@@ -32,96 +33,114 @@ nav ul li a {
     font-size: 18px;
 }
 
-
-
-/* Custom styles for h1 */
+/* Heading Styles */
 h1 {
-    font-family: 'Arial', sans-serif;
     color: #ECF2F5;
     font-size: 36px;
-    font-weight: bold;
-    margin-top: 20px
-}
-
-h2 {
-    font-family: 'Arial', sans-serif;
-    font-size: 24px;
     font-weight: bold;
     margin-top: 20px;
 }
 
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
 
 p {
     font-size: 14px;
     line-height: 1.5;
 }
 
-/* Styles for images */
+/* Image Styles */
 img {
-    border-radius: 8px; /* Optional: Add rounded corners */
-    max-width: 100%; /* Ensure image takes full width of its container */
+    border-radius: 8px;
+    max-width: 100%;
     height: auto;
-    max-height: 600px /* Maintain aspect ratio */
+    max-height: 600px;
 }
 
-/* Styles for sections */
-section {
-    padding: 20px;
-    margin: 20px auto;
+.main-content {
+    display: flex;
+    justify-content: space-between; /* Space between the Projects and About sections */
+    max-width: 80%;
+    margin: 40px auto;
+    gap: 20px; /* Adds spacing between the sections */
+}
+
+/* Projects section container */
+.projects-section {
+    flex: 3; /* Takes up more space */
     background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for better appearance */
-    max-width: 1200px; /* Maximum width for the section */
+
 }
 
+/* About section container */
+.about-section {
+    flex: 1; /* Takes up less space compared to projects */
+    background-color: transparent;
+}
+
+/* Section Styles */
 .section-container {
-    position: relative; /* Create a positioning context */
-    padding-top: 40px;
-    margin: 20px auto;
-    max-width: 1200px; /* Maximum width for the section */
-    width: 90%; /* Ensure the section takes up 90% of the viewport width */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.section-title {
-    position: absolute;
-    top: 0px; /* Adjust based on how far outside you want it to be */
-    left: 20px;
-    background-color: transparent; /* Ensure readability */
-    padding: 0 10px; /* Add padding for aesthetics */
-    
-}
-
-/* Flexbox container for the About section */
-.about-container {
-    display: flex; /* Use flexbox */
-    align-items: center; /* Align items vertically center */
-    gap: 20px; /* Add some space between image and text */
-}
-
-.about-container img {
-    max-width: 200px; /* Set a maximum width for the image */
-    align-items: center;
-}
-
-.about-text {
-    max-width: 100%; /* Set a maximum width for the text container */
-    
-}
-
-/* Flexbox container for the Airbnb project section */
+/* Flexbox container for the Projects section */
 .airbnb-container {
     display: flex;
     align-items: center;
-    gap: 20px; /* Add some space between images */
-    flex-wrap: wrap; /* Allow images to wrap to the next line if there isn't enough space */
-    justify-content: center; /* Center the images horizontally */
-    max-width: 100%; /* Ensure the container does not exceed the section width */
-    margin: 0 auto; /* Center the container */
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* About section styles */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-container img {
+    max-width: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.about-text {
+    max-width: 100%;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .projects-section,
+    .about-section {
+        flex: unset;
+        width: 100%;
+    }
+}
+
+.about-container img {
+    max-width: 150px;
+}
+
+.about-text {
+    max-width: 100%;
 }
 
 .airbnb-container img {
-    max-width: 400px; /* Maximum width for the images */
-    width: 100%; /* Ensure the image width is responsive */
+    max-width: 400px;
+    width: 100%;
     height: auto;
     transition: transform 0.3s ease;
 }
@@ -132,67 +151,57 @@ section {
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
-    .about-container {
-        flex-direction: column; /* Stack the items vertically */
-        align-items: flex-start; /* Align items to the start */
+    .main-content {
+        flex-direction: column;
     }
 
-    .about-container img {
-        max-width: 100%; /* Allow the image to take full width */
-        margin-bottom: 20px; /* Add some space below the image */
-    }
-
-    .about-text {
-        max-width: 100%; /* Allow the text to take full width */
-    }
-
-    .airbnb-container {
-        flex-direction: column; /* Stack the images vertically */
-        align-items: center; /* Center the images */
+    .projects-section,
+    .about-section {
+        flex: unset;
+        width: 100%;
     }
 }
 
+/* Link styles */
 a {
-    color: inherit; /* Inherit the color from the surrounding text */
-    text-decoration: none; /* Remove underline from links */
+    color: inherit;
+    text-decoration: none;
 }
 
-/* Optionally add a hover effect */
 a:hover {
-    text-decoration: underline; /* Adds underline on hover for clarity */
+    text-decoration: underline;
 }
 
-
-
-
+/* Footer Styles */
 footer {
-    background-color: #333; /* Dark background for the footer */
-    color: #fff; /* White text for contrast */
-    padding: 20px; /* Padding around the footer content */
-    text-align: center; /* Center the text */
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
     position: relative;
-    bottom: 0;
     width: 100%;
+    clear: both; /* Clear floats to ensure no overlap */
+    margin-top: 0px; /* Add spacing between content and footer */
 }
 
 footer h2 {
-    font-size: 1.5em; /* Adjust the font size */
-    margin-bottom: 10px; /* Add space below the header */
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
 footer p {
-    margin: 5px 0; /* Add some spacing between the paragraphs */
+    margin: 5px 0;
 }
 
 footer i {
-    margin-right: 10px; /* Add space between icons and text */
+    margin-right: 10px;
 }
 
 footer a {
-    color: #fff; /* Ensure any links in the footer are white */
+    color: #fff;
     text-decoration: none;
 }
 
 footer a:hover {
-    text-decoration: underline; /* Optional: underline links on hover */
+    text-decoration: underline;
 }

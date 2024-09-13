@@ -1,0 +1,198 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Styles for the navigation menu */
+nav ul {
+    list-style-type: none; /* Remove bullets */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox to display items in a row */
+    justify-content: center; /* Center the items horizontally */
+}
+
+nav ul li {
+    margin: 0 15px; /* Add some space between items */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+
+/* Custom styles for h1 */
+h1 {
+    font-family: 'Arial', sans-serif;
+    color: #ECF2F5;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 20px
+}
+
+h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Styles for images */
+img {
+    border-radius: 8px; /* Optional: Add rounded corners */
+    max-width: 100%; /* Ensure image takes full width of its container */
+    height: auto;
+    max-height: 600px /* Maintain aspect ratio */
+}
+
+/* Styles for sections */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for better appearance */
+    max-width: 1200px; /* Maximum width for the section */
+}
+
+.section-container {
+    position: relative; /* Create a positioning context */
+    padding-top: 40px;
+    margin: 20px auto;
+    max-width: 1200px; /* Maximum width for the section */
+    width: 90%; /* Ensure the section takes up 90% of the viewport width */
+}
+
+.section-title {
+    position: absolute;
+    top: 0px; /* Adjust based on how far outside you want it to be */
+    left: 20px;
+    background-color: transparent; /* Ensure readability */
+    padding: 0 10px; /* Add padding for aesthetics */
+    
+}
+
+/* Flexbox container for the About section */
+.about-container {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically center */
+    gap: 20px; /* Add some space between image and text */
+}
+
+.about-container img {
+    max-width: 200px; /* Set a maximum width for the image */
+    align-items: center;
+}
+
+.about-text {
+    max-width: 100%; /* Set a maximum width for the text container */
+    
+}
+
+/* Flexbox container for the Airbnb project section */
+.airbnb-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Add some space between images */
+    flex-wrap: wrap; /* Allow images to wrap to the next line if there isn't enough space */
+    justify-content: center; /* Center the images horizontally */
+    max-width: 100%; /* Ensure the container does not exceed the section width */
+    margin: 0 auto; /* Center the container */
+}
+
+.airbnb-container img {
+    max-width: 400px; /* Maximum width for the images */
+    width: 100%; /* Ensure the image width is responsive */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.airbnb-container img:hover {
+    transform: scale(1.3);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Stack the items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .about-container img {
+        max-width: 100%; /* Allow the image to take full width */
+        margin-bottom: 20px; /* Add some space below the image */
+    }
+
+    .about-text {
+        max-width: 100%; /* Allow the text to take full width */
+    }
+
+    .airbnb-container {
+        flex-direction: column; /* Stack the images vertically */
+        align-items: center; /* Center the images */
+    }
+}
+
+a {
+    color: inherit; /* Inherit the color from the surrounding text */
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Optionally add a hover effect */
+a:hover {
+    text-decoration: underline; /* Adds underline on hover for clarity */
+}
+
+
+
+
+footer {
+    background-color: #333; /* Dark background for the footer */
+    color: #fff; /* White text for contrast */
+    padding: 20px; /* Padding around the footer content */
+    text-align: center; /* Center the text */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer h2 {
+    font-size: 1.5em; /* Adjust the font size */
+    margin-bottom: 10px; /* Add space below the header */
+}
+
+footer p {
+    margin: 5px 0; /* Add some spacing between the paragraphs */
+}
+
+footer i {
+    margin-right: 10px; /* Add space between icons and text */
+}
+
+footer a {
+    color: #fff; /* Ensure any links in the footer are white */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Optional: underline links on hover */
+}
