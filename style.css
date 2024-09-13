@@ -70,7 +70,7 @@ img {
     justify-content: space-between; /* Space between the Projects and About sections */
     flex-wrap: wrap;
     max-width: 1500px;
-    margin: 40px auto;
+    margin: 0px auto;
     gap: 20px; /* Adds spacing between the sections */
     overflow: hidden
 }
