@@ -128,6 +128,33 @@ img {
     width: 100%
 }
 
+.project-details {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 80%;
+    flex-wrap: wrap
+}
+
+.project-details img {
+    max-width: 200px;
+    border-radius: 5px;
+}
+
+.project-details ul {
+    list-style-type: disc;
+    margin: 0;
+    padding-left: 20px;
+    font-size: 14px;
+    flex: 1;
+    line-height: 1.4;
+}
+
+.project-details ul li {
+    font-size: 12px; 
+    margin-left: 40px;
+}
+
 
 /* Flexbox container for the Projects section */
 .airbnb-container {
@@ -166,6 +193,19 @@ img {
     .about-section {
         flex: unset;
         width: 100%;
+    }
+    .project-details {
+        flex-direction: column;
+        align-items: center; /* Center the image and the list */
+        text-align: left;  /* Optional, makes text more readable */
+    }
+
+    .project-details img {
+        margin-bottom: 10px; /* Add some space below the image */
+    }
+
+    .project-details ul {
+        padding-left: 0; /* Removes extra padding when centered */
     }
 }
 
